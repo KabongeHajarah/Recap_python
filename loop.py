@@ -2963,3 +2963,4 @@ top_10_countries = [country["name"] for country in sorted_countries[:10]]
 print("Top 10 most populated countries:")
 for country in top_10_countries:
     print(country)
+    
