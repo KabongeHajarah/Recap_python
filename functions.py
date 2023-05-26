@@ -96,19 +96,40 @@ print(reverse_list(["A", "B", "C"]))
 print(reversed_list)
 
 # # [5, 4, 3, 2, 1]
-
 # # ["C", "B", "A"]
-# Declare a function named capitalize_list_items. It takes a list as a parameter and it returns a capitalized list of items
-# Declare a function named add_item. It takes a list and an item parameters. It returns a list with the item added at the end.
-# food_staff = ['Potato', 'Tomato', 'Mango', 'Milk'];
-# print(add_item(food_staff, 'Meat'))     # ['Potato', 'Tomato', 'Mango', 'Milk','Meat'];
-# numbers = [2, 3, 7, 9];
-# print(add_item(numbers, 5))      [2, 3, 7, 9, 5]
-# Declare a function named remove_item. It takes a list and an item parameters. It returns a list with the item removed from it.
-# food_staff = ['Potato', 'Tomato', 'Mango', 'Milk'];
-# print(remove_item(food_staff, 'Mango'))  # ['Potato', 'Tomato', 'Milk'];
-# numbers = [2, 3, 7, 9];
-# print(remove_item(numbers, 3))  # [2, 7, 9]
+
+# Declare a function named capitalize_list_items.
+#  It takes a list as a parameter and it returns a capitalized list of items
+def capitalize_list_items(my_list):
+   capitalized_list = [item.capitalize() for item in my_list]
+   return capitalized_list   
+capitalize_list=capitalize_list_items(["apple", "banana", "orange"])
+print(capitalize_list)
+
+# Declare a function named add_item. 
+# It takes a list and an item parameters. 
+# It returns a list with the item added at the end.
+def add_item(items,item):
+        if item not in items:
+            items.append(item)
+            return items
+food_staff = ['Potato', 'Tomato', 'Mango', 'Milk']
+print(add_item(food_staff, 'Meat'))     # ['Potato', 'Tomato', 'Mango', 'Milk','Meat'];
+numbers = [2, 3, 7, 9]
+print(add_item(numbers, 5))   
+# Declare a function named remove_item.
+#  It takes a list and an item parameters. 
+# It returns a list with the item removed from it.
+def remove_item(lst,item):
+    if item in lst:
+        lst.remove(item)
+        return lst
+food_staff = ['Potato', 'Tomato', 'Mango', 'Milk']
+print(remove_item(food_staff, 'Mango'))  # ['Potato', 'Tomato', 'Milk'];
+numbers = [2, 3, 7, 9]
+print(remove_item(numbers, 3))  # [2, 7, 9]
+
+
 # Declare a function named sum_of_numbers. It takes a number parameter and it adds all the numbers in that range.
 def  sum_of_numbers(numbers):
     sum=0
