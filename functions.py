@@ -58,7 +58,6 @@ season = check_season(6)
 print(season) 
 print(check_season(13))
 
-
 # Write a function called calculate_slope which return the slope of a linear equation
 
 def calculate_slope(x1, y1, x2, y2):
@@ -150,8 +149,7 @@ def  sum_of_odds(numbers):
             sum+=num
     return sum
 print(sum_of_odds(range(100)))
-print(sum_of_odds(range(10)))
-
+print(sum_of_odds(range(10)))                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
 
 # Declare a function named sum_of_even. It takes a number parameter and it adds all the even numbers in that - range.
 def  sum_of_even(numbers):
@@ -163,3 +161,5 @@ def  sum_of_even(numbers):
     return sum
 print(sum_of_even(range(100)))
 print(sum_of_even(range(10)))
+
+###Exercise 2

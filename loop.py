@@ -7,8 +7,6 @@ while i<=10:
     print(i)
     i+=1
 
-
-
 # Iterate 10 to 0 using for loop, do the same using while loop.
 i=10
 while i>=0:
