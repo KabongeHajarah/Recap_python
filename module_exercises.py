@@ -103,4 +103,27 @@ print(generate_colors(1,'rgb'))  # ['rgb(33,79, 176)']
 
 # Exercises: Level 3
 # Call your function shuffle_list, it takes a list as a parameter and it returns a shuffled list
-# Write a function which returns an array of seven random numbers in a range of 0-9. All the numbers must be unique.
+import random
+
+def shuffle_list(lst):
+    random.shuffle(lst)
+    return lst
+
+# Example usage
+my_list = [1, 2, 3, 4, 5]
+shuffled_list = shuffle_list(my_list)
+print(shuffled_list)
+
+# Write a function which returns an array of seven random numbers
+#  in a range of 0-9. All the numbers must be unique.
+import random
+
+def generate_unique_random_numbers():
+    numbers = random.sample(range(10), 7)
+    return numbers
+
+print(generate_unique_random_numbers())
+ 
+
+
+ 
