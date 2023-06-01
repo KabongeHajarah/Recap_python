@@ -43,13 +43,60 @@ print(rgb_color_gen())
 
 
 # Exercises: Level 2
-# Write a function list_of_hexa_colors which returns any number of hexadecimal colors in an array (six hexadecimal numbers written after #. Hexadecimal numeral system is made out of 16 symbols, 0-9 and first 6 letters of the alphabet, a-f. Check the task 6 for output examples).
+# Write a function list_of_hexa_colors which
+#  returns any number of hexadecimal colors in an array (six hexadecimal numbers written after #.
+#  Hexadecimal numeral system is made out of 16 symbols, 0-9 and first 6 letters of the alphabet, a-f.
+#  Check the task 6 for output examples).
+
+import random
+
+def list_of_hexa_colors(num_colors):
+    colors = []
+    
+    for _ in range(num_colors):
+        color = '#'
+        for _ in range(6):
+            color += random.choice('0123456789ABCDEF')
+        colors.append(color)
+    
+    return colors
+
+# Generate 5 hexadecimal colors
+print(list_of_hexa_colors(5))
+
+
+
 # Write a function list_of_rgb_colors which returns any number of RGB colors in an array.
 # Write a function generate_colors which can generate any number of hexa or rgb colors.
-#    generate_colors('hexa', 3) # ['#a3e12f','#03ed55','#eb3d2b'] 
-#    generate_colors('hexa', 1) # ['#b334ef']
-#    generate_colors('rgb', 3)  # ['rgb(5, 55, 175','rgb(50, 105, 100','rgb(15, 26, 80'] 
-#    generate_colors('rgb', 1)  # ['rgb(33,79, 176)']
+
+import random
+
+def generate_colors(num_colors, color_type):
+    colors = []
+    
+    if color_type == "hexa":
+        for _ in range(num_colors):
+            color = '#'
+            for _ in range(6):
+                color += random.choice('0123456789ABCDEF')
+            colors.append(color)
+    elif color_type == "rgb":
+        for _ in range(num_colors):
+            color = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+            colors.append(color)
+    
+    return colors
+
+# Generate 5 hexa colors
+print(generate_colors(5, "hexa"))
+
+# Generate 5 RGB colors
+print(generate_colors(5, "rgb"))
+
+print(generate_colors(3,'hexa')) # ['#a3e12f','#03ed55','#eb3d2b'] 
+print(generate_colors(1,'hexa'))# ['#b334ef']
+print(generate_colors(3,'rgb')) # ['rgb(5, 55, 175','rgb(50, 105, 100','rgb(15, 26, 80'] 
+print(generate_colors(1,'rgb'))  # ['rgb(33,79, 176)']
 
 
 
