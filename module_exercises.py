@@ -19,7 +19,7 @@ def user_id_gen_by_user():
     length = int(input("Enter the number of characters for the user ID: "))
     count = int(input("Enter the number of user IDs to generate: "))
     user_ids = []
-    
+    user_id=[]
     for i in range(count):
         user_id = ''.join(random.choices(string.ascii_lowercase + string.digits, k=length))
         user_ids.append(user_id)
