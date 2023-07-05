@@ -8,13 +8,13 @@ result=higher_order_function(sum_numbers,[1,2,3,4])
 print(result)
 
 #Function as a return value
-def square(x):          # a square function
+def square(x):       
     return x ** 2
 
 def cube(x):            # a cube function
     return x ** 3
 
-def absolute(x):        # an absolute value function
+def absolute(x):        
     if x >= 0:
         return x
     else:
