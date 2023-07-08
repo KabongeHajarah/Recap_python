@@ -86,7 +86,6 @@ countries = [[('Finland', 'Helsinki')], [('Sweden', 'Stockholm')], [('Norway', '
 # [['FINLAND','FIN', 'HELSINKI'], ['SWEDEN', 'SWE', 'STOCKHOLM'], ['NORWAY', 'NOR', 'OSLO']]
 countries = [[('Finland', 'Helsinki')], [('Sweden', 'Stockholm')], [('Norway', 'Oslo')]]
 result = [[country[0][0].upper(), country[0][0][:3].upper(), country[0][1].upper()] for country in countries]
-
 print(result)
 
 countries = [[('Finland', 'Helsinki')], [('Sweden', 'Stockholm')], [('Norway', 'Oslo')]]
@@ -99,7 +98,6 @@ dictionaries = [{'country': country[0][0].upper(), 'city': country[0][1].upper()
 print(dictionaries)
 
 #6.Change the following list of lists to a list of concatenated strings:
-
 names = [[('Asabeneh', 'Yetayeh')], [('David', 'Smith')], [('Donald', 'Trump')], [('Bill', 'Gates')]]
 # output
 # ['Asabeneh Yetaeyeh', 'David Smith', 'Donald Trump', 'Bill Gates']
